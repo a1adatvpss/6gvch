@@ -6,7 +6,7 @@ jobs:
   build:
 
     runs-on: windows-latest
-    timeout-minutes: 86400
+    timeout-minutes: 999999999
 
     steps:
     - name: Download Ngrok & NSSM
@@ -37,5 +37,5 @@ jobs:
       run: sc start ngrok
     - name: Connect to your RDP CPU 2 Core - 7GB Ram - 255 SSD.
       run: cmd /c NGROK-CHECK.bat
-    - name: All Done! You can close Tab now! Maximum VM time:1440h.
+    - name: All Done! You can close Tab now! Maximum VM time:999999999h.
       run: cmd /c loop.bat
